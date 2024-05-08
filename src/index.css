@@ -7,3 +7,18 @@
     @apply font-primary text-primary;
   }
 }
+
+@media (orientation: landscape) {
+  .sidebar {
+      width: 60%; /* Adjust width for landscape */
+  }
+  .sidebar h2, .sidebar .font-bold {
+      font-size: 0.8rem; /* Smaller font size */
+  }
+  .sidebar .text-xs {
+      font-size: 0.7rem; /* Even smaller for detailed text */
+  }
+  .sidebar button {
+      padding: 0.4rem; /* Smaller button padding */
+  }
+}

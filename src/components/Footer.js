@@ -1,12 +1,12 @@
-import heimwoodlogo from './heimwoodlogo.avif'
+import heimwoodlogo from './heimwoodlogo.avif';
 
 const Footer = () => {
   return (
-    <footer className="bg-emerald-600 text-white p-10">
-      <div className="max-w-6xl mx-auto flex justify-between">
+    <footer className="bg-emerald-600 text-white p-4 sm:p-10">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between text-center sm:text-left">
         {/* First Column */}
-        <div className="flex flex-col">
-          <span className=" font-bold text-lg mb-2">Heimwood</span>
+        <div className="flex flex-col mb-6 sm:mb-0">
+          <span className="font-bold text-lg mb-2">Heimwood</span>
           <span>CVR: 42513881</span>
           <span>Strandvejen 18</span>
           <span>2100 København Ø</span>
@@ -15,12 +15,12 @@ const Footer = () => {
         </div>
         
         {/* Second Column - Large Logo or Branding */}
-        <div className="flex justify-center items-center">
-<img src={heimwoodlogo} className='w-[10rem]' alt="" />       
- </div>
+        <div className="flex justify-center items-center mb-6 sm:mb-0">
+          <img src={heimwoodlogo} className='w-24 sm:w-[10rem]' alt="Heimwood logo" />       
+        </div>
 
         {/* Third Column */}
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col items-center sm:items-end mb-6 sm:mb-0">
           <div className="mb-4">
             <span>Følg os på:</span>
             {/* Placeholder icons for social media */}

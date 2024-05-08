@@ -10,6 +10,7 @@ const initialState = {
     error: null
 };
 
+
 // Define a reducer for updating the state based on dispatched actions
 function productReducer(state, action) {
     switch (action.type) {
