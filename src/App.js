@@ -12,6 +12,8 @@ import ContractsPage from './pages/ContractPage'; // Make sure the path is corre
 import ClientPage from './pages/Clientpage';
 import ClientDetails from './pages/ClientDetails';
 import VideoGuide from './pages/Videoguidepage';
+import Homepage from './pages/ClientHomepage';
+import ProfilePage from './pages/Profilepage';
 const App = () => {
   return (
     <Router>
@@ -19,7 +21,9 @@ const App = () => {
         <Header />
         <div className='flex-grow'>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<Homepage />} />
+            <Route path='/webshop' element={<Home />} />
+            <Route path='/profile' element={<ProfilePage />} />
             <Route path='/product/:id' element={<ProductDetails />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/supplierpage" element={<SupplierPage />} />
